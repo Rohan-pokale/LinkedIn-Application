@@ -1,5 +1,4 @@
 package com.linkedin.user_service.Exceptions;
-import com.linkedin.post_service.Exceptions.ApiError;
 import org.apache.coyote.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
