@@ -17,18 +17,11 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="Notification-service" />
         <module name="post-service" />
-      </profile>
-      <profile name="Annotation profile for API-gateway" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-        </processorPath>
+        <module name="user-service" />
         <module name="API-gateway" />
         <module name="Connections-service" />
-        <module name="user-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -36,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="API-gateway" options="-parameters" />
       <module name="Connections-service" options="-parameters" />
+      <module name="Notification-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="post-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
